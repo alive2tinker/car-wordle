@@ -12,5 +12,11 @@
    "Hint":"تلميحة",
    "Guess the Car in six tries.":"تخمين السيارة في ست محاولات.",
    "Each guess should be a valid car name. Hit the enter button to submit.":"يجب أن يكون كل تخمين اسم سيارة صالحًا. اضغط على زر الدخول لتقديم.",
-   "Here is a hint for you":"هنا تلميح لك"
+   "Here is a hint for you":"هنا تلميح لك",
+   "You failed this challenge":"لقد فشلت في هذا التحدي",
+   "You should refresh the page and try again":"يجب عليك تحديث الصفحة والمحاولة مرة أخرى",
+   "Try again":"حاول مرة أخرى",
+   "The car was indeed :carName. come back tomorrow for a new car and a new challenge":"كانت السيارة بالفعل: :carName. أعود غدًا للحصول على سيارة جديدة وتحدي جديد",
+   "Homepage":"الصفحة الرئيسية",
+   "You are correct":"لقد فزت"
 }
