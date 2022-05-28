@@ -13,6 +13,7 @@ class Car extends Model
         'name',
         'name_ar',
         'hint',
-        'hint_ar'
+        'hint_ar',
+        'current'
     ];
 }
