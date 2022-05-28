@@ -24,6 +24,6 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         User::create(['name' => "Admin", 'email' => "sufayran@gmail.com", 'password' => bcrypt('alive2tinker')]);
-        Car::factory(10)->create();
+        // Car::factory(10)->create();
     }
 }
