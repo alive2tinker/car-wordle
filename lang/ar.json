@@ -1,0 +1,16 @@
+{
+   "You are very close":"انت قريب جدا من الحل" ,
+   "Incorrect Attempt":"الاجابة خاطئة",
+   "Enter":"ادخل",
+   "First Try":"المحاولة الاولى",
+   "Second Try":"المحاولة الثانية",
+   "Third Try":"المحاولة الثالثة",
+   "Fourth Try":"المحاولة الرابعة",
+   "Fifth Try":"المحاولة الخامسة",
+   "Sixth Try":"المحاولة السادسة",
+   "Car Wordle":"كار وردل",
+   "Hint":"تلميحة",
+   "Guess the Car in six tries.":"تخمين السيارة في ست محاولات.",
+   "Each guess should be a valid car name. Hit the enter button to submit.":"يجب أن يكون كل تخمين اسم سيارة صالحًا. اضغط على زر الدخول لتقديم.",
+   "Here is a hint for you":"هنا تلميح لك"
+}
