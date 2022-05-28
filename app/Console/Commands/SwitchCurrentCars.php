@@ -28,20 +28,26 @@ class SwitchCurrentCars extends Command
      */
     public function handle()
     {
-        $car = Car::where('current', true)->first();
-        $newCar = Car::all()->shuffle()->first();
-        do{
-            if($car->name !== $newCar->name){
-                $car->update([
-                    'current' => false
-                ]);
-                $newCar->update([
-                    'current' => true
-                ]);
-            }else{
-                $newCar = Car::all()->shuffle()->first();
-            }
-        }while($car->name === $newCar->name);
+        try{
+            $car = Car::where('current', true)->first();
+            $newCar = Car::all()->shuffle()->first();
+            do {
+                if ($car->name !== $newCar->name) {
+                    $car->update([
+                        'current' => false
+                    ]);
+                    $newCar->update([
+                        'current' => true
+                    ]);
+                } else {
+                    $newCar = Car::all()->shuffle()->first();
+                }
+            } while ($car->name === $newCar->name);
+        }catch(\Exception $e){
+            $car = Car::all()->shuffle()->first()->update([
+                'current' => 1
+            ]);
+        }
         
         return 0;
     }
