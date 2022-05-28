@@ -21,7 +21,7 @@ class CarWordle extends Component
 
     public function submitTry()
     {
-        if($this->input === $this->car->name){
+        if($this->input === $this->car->name || $this->input === $this->car->name_ar){
             $this->succeeded = true;
         }else if($this->currentStep === $this->maxTries){
             $this->failed = true;
@@ -35,6 +35,8 @@ class CarWordle extends Component
     public function showFeedback()
     {
         if(str_contains($this->car->name, $this->input) && ($this->car->name != $this->input)){
+            $this->addError("try-{$this->currentStep}", __("You are very close"));
+        }else if(str_contains($this->car->name_ar, $this->input) && ($this->car->name_ar != $this->input)){
             $this->addError("try-{$this->currentStep}", __("You are very close"));
         }else{
             $this->addError("try-{$this->currentStep}", __("Incorrect Attempt"));
